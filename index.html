@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1fa0784cd9.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>Calculatrice</title>
+</head>
+<body>
+    <section class="calc">
+        <div class="ecran">
+            <div class="clockContainer">
+                <div class="clock" onclick="historiqueDisplay()"><i class="fa-regular fa-clock" ></i></div>
+            </div>
+            <div class="historique hide">
+                <h3>Historique</h3>
+                <div id="historiqueContainer">
+                    <p id="startHistorique"></p>
+                    <p id="centerHistorique"></p>
+                    <p id="endHistorique"></p>
+                </div>
+            </div>
+            <div class="input_ecran">
+                <input type="text" id="calcul" disabled>
+                <input type="text" id="result" disabled>
+            </div>
+        </div>
+        <form>
+            <button type="button"  class="btn_green" id="ac" onclick="clearCalc()">AC</button>
+            <button type="button"  class="btn_blue btnP" id="(">( )</button>
+            <button type="button"  class="btn_blue btnP" id="%">%</button>
+            <button type="button"  class="btn_blue btnP" id="/">÷</button>
+            <button type="button"  class="btn_dark btnP" id="7">7</button>
+            <button type="button"  class="btn_dark btnP" id="8">8</button>
+            <button type="button"  class="btn_dark btnP" id="9">9</button>
+            <button type="button"  class="btn_blue btnP" id="*">x</button>
+            <button type="button"  class="btn_dark btnP" id="4">4</button>
+            <button type="button"  class="btn_dark btnP" id="5">5</button>
+            <button type="button"  class="btn_dark btnP" id="6">6</button>
+            <button type="button"  class="btn_blue btnP" id="-">-</button>
+            <button type="button"  class="btn_dark btnP" id="1">1</button>
+            <button type="button"  class="btn_dark btnP" id="2">2</button>
+            <button type="button"  class="btn_dark btnP" id="3">3</button>
+            <button type="button"  class="btn_blue btnP" id="+" >+</button>
+            <button type="button"  class="btn_dark btnP" id="0">0</button>
+            <button type="button"  class="btn_dark btnP" id=".">.</button>
+            <button type="button"  class="btn_dark" id="delete" onclick="deleteElement()"><i class="fa-solid fa-delete-left"></i></button>
+            <button type="button"  class="btn_gray" id="equal" onclick="showCalcul()">=</button>
+
+        </form>
+    </section>
+</body>
+</html>
