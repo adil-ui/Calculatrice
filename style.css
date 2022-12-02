@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica;
 }
 body{
     background-color: black;
@@ -57,7 +57,6 @@ body{
     to{width: 0; height: 0;}
 }
 .show{
-    display: block;
     animation: showHistorique .5s linear;
 }
 .hide{
@@ -65,12 +64,14 @@ body{
 }
 .historique h3{
     color: white;
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 20px;
     margin-bottom: 40px;
     padding: 15px;
     border-bottom: 1px solid rgb(67, 67, 67);
 
+}.historiqueContainer{
+    transition: .5s;
 }
 .historique p {
     color: white;
